@@ -6,12 +6,12 @@
   //   .content
 
   //   .content-panel
-  
-  .content-banner 
-    margin: 0 0 5% 0 
+
+  .content-banner
+    margin: 0 0 5% 0
     height: auto
     background: none
-    &.full 
+    &.full
       padding: 0
       img
         width: 100%
@@ -27,9 +27,9 @@
       .content-left
         width: 50%
         padding: 4em 0
-        h2 
+        h2
           color: #0391C0
-        h2, p 
+        h2, p
           margin-bottom: 0.5em
         a
           background: #12BBF3
@@ -37,11 +37,11 @@
           color: #fff
           padding: 8px 20px
           text-decoration: none
-    
+
     &.projects
       background: url('/build/assets/images/homepage/projects-banner.png') right top no-repeat
       background-size: cover
-      
+
       .content-panel
         padding: 3%
         background: #fff
@@ -80,7 +80,7 @@
           h2
             font-size: 24px
             line-height: 28px
-    
+
 
   .content-section
     margin: 60px 0 100px 0
@@ -98,36 +98,36 @@
         display: flex
         justify-content: space-between
         &.triple
-          .card 
+          .card
             flex: 0 1 32%
         &.double
-          .card 
+          .card
             width: 49%
       @include breakpoint(mobile tablet)
-        .card 
+        .card
           margin-bottom: 5%
 
       .card
         ul
-          &.flat 
+          &.flat
             list-style-type: none
           &.vertical
             display: block
           &.horizontal
             display: flex
             justify-content: space-between
-        .content 
+        .content
           padding-bottom: 0px
           border: none
 
         &.orange
           border: 1px solid $color-orange
           border-radius: 8px
-          h3 
-            padding: 6% 0 2% 6% 
+          h3
+            padding: 6% 0 2% 6%
             margin: 0
             border-top: 1px solid $color-orange
-          ul 
+          ul
             padding: 0 6% 6% 6%
           @include breakpoint(tablet)
             display: flex
@@ -138,7 +138,7 @@
               &:last-child
                 border-left: 1px solid $color-orange
 
-        &.padded 
+        &.padded
           padding: 2%
           h3
             font-size: 2em
@@ -157,22 +157,22 @@
           background-color: $color-brand-grey
         &.edge-blue
           border-left: 4px solid $color-blue
-    
+
   .events
     h3
       font-size: 2em
-      margin: 0 auto;
+      margin: 0 auto
       text-align: center
       margin-bottom: 1em
       @include breakpoint(desktop)
         max-width: 380px
 
-    table 
+    table
       border: none
       border-top: 1px solid $color-orange
       border-bottom: 1px solid $color-orange
       border-radius: 0px
       font-family: "wav"
-      tr:nth-child(2n+1) 
+      tr:nth-child(2n+1)
         background: $color-brand-grey
         color: $color-brown

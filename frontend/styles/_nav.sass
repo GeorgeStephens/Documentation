@@ -1,11 +1,11 @@
-body.scrolled 
+body.scrolled
   .nav-main-wrapper
     border-bottom: 1px solid #12BBF3
 
-nav ul 
+nav ul
   margin: 0
   padding: 0
-  li 
+  li
     list-style-type: none
     display: inline-block
   a
@@ -20,7 +20,7 @@ nav ul
   width: 100%
   top: 0
   z-index: 100000
-  
+
   .nav-main-inside
     display: flex
     margin: 0 auto
@@ -40,22 +40,22 @@ nav ul
         margin-left: 1.5em
     @include breakpoint(mobile tablet)
       display: none
-  .hamburger 
+  .hamburger
     position: absolute
     right: 1em
     top: 35px
     border: none
     z-index: 10
     display: none
-    @include breakpoint(mobile tablet) 
+    @include breakpoint(mobile tablet)
       display: block
-  .darkmode 
+  .darkmode
     position: absolute
-    right: 1em 
+    right: 1em
     top: 1.3em
     @include breakpoint(mobile tablet)
     right: 3.3em
-                
+
 
 .nav-secondary-wrapper
   margin-top: 87px
@@ -65,7 +65,7 @@ nav ul
     padding-left: 1em
     display: flex
     flex-wrap: wrap
-    margin: 0 
+    margin: 0
     padding: 0
     li
       a
@@ -79,7 +79,7 @@ nav ul
       &.active
         a
           background: #F88909
-          color: #fff 
+          color: #fff
       @include breakpoint(desktop-small)
         margin-right: 0.5em
         a
@@ -89,7 +89,7 @@ nav ul
 .mobile-subnav-controls
   background: #F88909
   color: #fff
-  padding: 0.8em 1em;
+  padding: 0.8em 1em
   span
     background: #F88909
     border: none
@@ -106,7 +106,7 @@ nav ul
 
 .nav-accordion
   &.fixed-element
-    width: 16.7%  
+    width: 16.7%
   a, span
     text-decoration: none
     font-family: "Wavehaus-Book"
@@ -123,7 +123,7 @@ nav ul
     border-bottom: 0.5px solid #D7D3D0
     padding: 0.8em 1em
     display: block
-  
+
   .has-submenu
     position: relative
     .triggerButton
@@ -143,7 +143,7 @@ nav ul
       .triggerButton
         transform: rotate(0deg)
         top: 0
-  
+
   .currentPage:not(ul)
     background: $color-mid-grey
     border-left: 2px solid $color-orange
@@ -161,7 +161,7 @@ nav ul
     /* Tier 2 Wrapper */
     ul
       border-bottom: none
-      &.active 
+      &.active
         border-bottom: 0.5px solid #D7D3D0
       li
         // padding: 0.3em 1.8em 0
@@ -171,10 +171,10 @@ nav ul
           margin-bottom: 10px
 
         /* Tier 3 Wrapper */
-        ul 
-          &.active 
+        ul
+          &.active
             border-bottom: none
-          li 
+          li
             &:first-child, &:last-child
               margin-top: 0
               margin-bottom: 0
@@ -186,7 +186,7 @@ nav ul
               li
                 a
                   padding: $sublink-padding-vertical 2em $sublink-padding-vertical 5em
-      a       
+      a
         display: block
         &.has-submenu
           .triggerButton
@@ -201,7 +201,7 @@ nav ul
           &.active
             font-family: "Wavehaus-Bold"
 
-      
+
 #mobile-header-nav
   position: fixed
   width: 100%
@@ -219,12 +219,12 @@ nav ul
     align-items: center
     height: 100%
     ul
-      li 
+      li
         float: none
-        margin-bottom: $content-spacing/2
+        margin-bottom: calc($content-spacing / 2)
         display: block
         text-align: center
-        a 
+        a
           color: #ffff
           font-size: 32px
   .close
@@ -262,7 +262,7 @@ nav ul
   @include breakpoint(mobile tablet)
     .mobile_sub_navigation
       display: block
-      
+
 .top-nav-buttons
   padding: 1em
   button:last-child
@@ -309,13 +309,13 @@ nav ul
     overflow: auto
 
   .topbar-wrapper
-    width: 100%;
-    max-width: 450px;
-    ul 
+    width: 100%
+    max-width: 450px
+    ul
       list-style-type: none
       margin: 0
       padding: 0
-      li 
+      li
         a
           font-family: "Wavehaus-Book"
           font-size: 18px
